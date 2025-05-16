@@ -141,14 +141,17 @@ terraform destroy
 
 ---
 
-## References
+---
 
-- [Amazon EKS Documentation](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html)
-- [AWS EBS CSI Driver](https://docs.aws.amazon.com/eks/latest/userguide/ebs-csi.html)
-- [Terraform AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
-- [Kubernetes Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/)
+## Features
+
+- Automated VPC and EKS cluster provisioning using Terraform
+- Secure IAM roles and policies for EKS and EBS CSI driver
+- Dynamic EBS volume provisioning via Kubernetes StorageClass
+- Example StatefulSet and Service using dynamically provisioned storage
 
 ---
+
 
 ## Testing the EBS Persistent Volume
 
@@ -184,13 +187,13 @@ It is crucial to verify that the dynamically provisioned EBS volume is functioni
 
 ---
 
----
+## References
 
-## Features
-
-- Automated VPC and EKS cluster provisioning using Terraform
-- Secure IAM roles and policies for EKS and EBS CSI driver
-- Dynamic EBS volume provisioning via Kubernetes StorageClass
-- Example StatefulSet and Service using dynamically provisioned storage
+- [Amazon EKS Documentation](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html)
+- [AWS EBS CSI Driver](https://docs.aws.amazon.com/eks/latest/userguide/ebs-csi.html)
+- [Terraform AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
+- [Kubernetes Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/)
 
 ---
+
+
